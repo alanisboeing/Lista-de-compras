@@ -124,9 +124,16 @@ body{
         align-items: center;
     }
     .principal{
-        box-sizing: border-box;
+        display: block;
+        align-items: center;
     }
     .item{
         margin: 1em 0;
+    }
+    .lista-compras{
+        text-align: center;
+        align-items: center;
+        padding-left: 35vw;
+        padding-top: 0;
     }
 }
