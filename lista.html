@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Lista de Compras</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <main class="conteudo">
+            <div class="principal">
+                <img src="imagens/pngegg (1).png" class="lista-compras">
+
+                <form class="adicionar" id="novoItem">
+                    <label for="nome">Item</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite o nome do item">
+                    <label for="quantidade">Quantidade</label>
+                    <input type="number" name="quantidade" id="quantidade" placeholder="Digite uma quantidade para o item">
+                    <label for="categoria">Categoria</label>
+                    <select name="categoria" id="categoria" class="categoria" >
+                        <option value="padaria" class="padaria">Padaria</option>
+                        <option value="hortifruti" class="hortifruti">Hortifruti</option>
+                        <option value="frios" class="frios">Frios e Laticínios</option>
+                        <option value="higiene" class="higiene">Higiene</option>
+                        <option value="limpeza" class="limpeza">Limpeza</option>
+                        <option value="outros" class="outros">Outros</option>
+                    </select>
+                    <input type="submit" value="Adicionar" class="cadastrar" id="adicionar">
+                </form>
+            </div>
+            
+            <ul class="lista" id="lista">
+                <li class="item">Padaria
+                    <ul class="padaria">
+                    </ul>
+                </li>
+
+                <li class="item">Hortifruti
+                    <ul class="hortifruti">
+                    </ul>
+                </li>      
+
+                <li class="item">Frios e Laticínios
+                    <ul class="frios">
+                    </ul>
+                </li> 
+
+                <li class="item">Higiene
+                    <ul class="higiene">
+                    </ul>
+                </li> 
+
+                <li class="item">Limpeza
+                    <ul class="limpeza">
+                    </ul>
+                </li> 
+
+                <li class="item">Outros
+                    <ul class="outros">
+                    </ul>
+                </li> 
+
+            </ul>
+        </main>
+        <script src="main.js"></script>
+    </body>
+</html>
